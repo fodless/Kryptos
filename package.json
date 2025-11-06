@@ -1,0 +1,21 @@
+{
+  "name": "kryptos",
+  "version": "0.1.0",
+  "description": "Zero-knowledge encrypted file sharing platform",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=backend & npm run dev --workspace=frontend",
+    "build": "npm run build --workspace=backend",
+    "start": "NODE_OPTIONS='--max-old-space-size=2048' npm run build --workspace=backend && npm run start --workspace=backend",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "format": "prettier --write \"**/*.{js,ts,jsx,tsx,json,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  }
+}
