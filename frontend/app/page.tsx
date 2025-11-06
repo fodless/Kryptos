@@ -25,30 +25,6 @@ export default function Home() {
 
         {/* Upload Form */}
         <UploadForm />
-
-        {/* Features */}
-        <section className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-slate-800/50 p-6 rounded-lg border border-slate-700">
-            <h3 className="text-lg font-semibold mb-2 text-white">🔐 End-to-End Encrypted</h3>
-            <p className="text-slate-300">
-              Files are encrypted in your browser before uploading. Only the recipient can decrypt them.
-            </p>
-          </div>
-
-          <div className="bg-slate-800/50 p-6 rounded-lg border border-slate-700">
-            <h3 className="text-lg font-semibold mb-2 text-white">⏱️ Auto-Expiring Links</h3>
-            <p className="text-slate-300">
-              Set expiration times (1h, 24h, 7d, 30d) to automatically delete files after sharing.
-            </p>
-          </div>
-
-          <div className="bg-slate-800/50 p-6 rounded-lg border border-slate-700">
-            <h3 className="text-lg font-semibold mb-2 text-white">🛡️ Password Protected</h3>
-            <p className="text-slate-300">
-              Optional password protection adds an extra layer of security to your shared files.
-            </p>
-          </div>
-        </section>
       </main>
     </div>
   )
